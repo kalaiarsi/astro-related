@@ -1,0 +1,46 @@
+---
+title: "Magnetars"
+author: "kalai"
+date: "July 17, 2015"
+output: html_document
+---
+
+##To get the catalog of magnetars from "McGill Magnetar Catalog" (J/ApJS/212/6/table9 in Vizier records)
+
+The following code gives the basic table extracted form Vizier. It has 26 rows (magnetars) and 52 columns (details).
+
+```{r,echo=FALSE}
+rm(list=ls())
+primary_table_link="http://vizier.u-strasbg.fr/viz-bin/VizieR-5?-ref=VIZ55a8986f2cc6&-out.add=.&-source=J/ApJS/212/6/table9&recno="
+library(XML)
+
+#function to extract table lines
+read_magnetar_detail<-function(record_no){
+  m<-(readHTMLTable(paste(primary_table_link,as.character(record_no),sep=""),na.omit=TRUE))[[3]][2]
+  unlist(m)
+}
+
+#function to remove all-NA-columns
+remove_col_with_all_as_NA<-function(df){
+  df <- df[,colSums(is.na(df))<nrow(df)]
+}
+
+
+#to extract the description about the table ex: column names, units, related texts etc.
+details<-(readHTMLTable("http://vizier.u-strasbg.fr/viz-bin/VizieR-5?-ref=VIZ55a8a7051224&-out.add=.&-source=J/ApJS/212/6/table9&recno=1"))[[3]]
+col_names<-details[1]
+col_names<-col_names[col_names!=""]# to remove empty "" lines
+col_units<-details[3]#no NA removal,as some data are dimensionless
+description<-details[4]
+description<-description[is.na(description)==FALSE]# remove NAs
+rm(details)
+
+magnetar<-sapply(1:26,read_magnetar_detail)
+#transposing the dataframe to get rows of magnetars
+magnetar<-t(magnetar)
+magnetar<-remove_col_with_all_as_NA(magnetar)
+colnames(magnetar)<-col_names
+# setcolorder(magnetar,("Name"))
+head(magnetar)
+
+```

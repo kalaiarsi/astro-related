@@ -1,0 +1,126 @@
+Name	Date	Ksmag_limit	Ksmag	e_Ksmag	Ksmag_Filter	Hmag_limit	Hmag	e_Hmag	Hmag_Filter	Jmag_limit	Jmag	e_Jmag	Jmag_Filter	Imag_limit	Imag	e_Imag	Imag_Filter	Rmag_limit	Rmag	e_Rmag	Rmag_Filter	Vmag_limit	Vmag	e_Vmag	Vmag_Filter	Bmag_limit	Bmag	e_Bmag	Bmag_Filter	Umag_limit	Umag	Umag_Filter	Sigma_X	Ref
+CXOU J010043.1-721134	36953				Ks				H				J	>	24.5		F814W				R		24.19	0.15	F606W				B	>	21.7	F300W	3	219
+CXOU J010043.1-721134	39211				Ks				H				J	>	25.9		F814W				R	>	26.2		F606W	>	25.6		F439W	>	24.2	F336W	3	231
+4U 0142+61	34638				Ks				H				J		23.84	0.06	I		24.99	0.07	R		25.62	0.08	V				B			U		201
+4U 0142+61	36199		19.68	0.05	K				H				J				I				R				V				B			U		212
+4U 0142+61	36848				Ks				H				J		23.84	0.04	I		24.89	0.05	R		25.62	0.08	V	>	27.4		B			U	3	212
+4U 0142+61	36848				Ks				H				J				I				R				V		28.1	0.5	B			U		212
+4U 0142+61	37195		20.15	0.08	Ks				H				J				I				R				V				B			U		212
+4U 0142+61	37486		19.76	0.05	K'		20.52	0.11	H		21.96	0.12	J				I				R				V				B			U		226
+4U 0142+61	37511				Ks				H				J		23.7	0.1	i'				R				V		27.2	0.2	g'	>	25.8	u'		216
+4U 0142+61	37608		19.85	0.04	Ks				H				J				I				R				V				B			U		212
+4U 0142+61	37623				Ks				H				J		23.77	0.11	I		25.29	0.19	R		26.1	0.18	V				B			U		226
+4U 0142+61	37868				Ks				H				J		23.973	0.093	I		25.556	0.177	R		25.316	0.134	V	>	27.2		B			U	3	222
+4U 0142+61	37872		20.18	0.08	K'				H				J				I				R				V				B			U		226
+4U 0142+61	37873		20.78	0.08	K'		20.9	0.08	H		22.18	0.09	J				I				R				V				B			U		226
+4U 0142+61	37878		19.85	0.04	Ks				H				J				I				R				V				B			U		226
+4U 0142+61	37923		19.83	0.03	Ks				H				J				I				R				V				B			U		226
+4U 0142+61	37976				Ks				H				J		23.44	0.18	I		25.34	0.12	R				V				B			U		226
+4U 0142+61	38199		19.73	0.09	K'				H				J				I				R				V				B			U		246
+4U 0142+61	38293		19.96	0.07	Ks		20.69	0.12	H		21.97	0.16	J				I				R				V				B			U		226
+4U 0142+61	38546				Ks				H				J				I		25.42	0.06	r'				V				B			U		226
+4U 0142+61	38559		19.96	0.1	Ks				H				J				I				R				V				B			U		226
+SGR 0418+5729	40027	>	19.6		Ks				H				J				I				R				V				B			U	5	251
+SGR 0418+5729	40041				Ks				H				J				I	>	24		r				V				B			U	2	258
+SGR 0418+5729	40071				Ks				H				J	>	25.1		i'				R				V				B			U	3	248
+SGR 0418+5729	40470				Ks				H	>	27.4		F110W				I				R	>	28.6		F606W				B			U	3	253
+SGR 0501+4516	39682		18.6		K				H				J				I				R				V				B			U		239
+SGR 0501+4516	39684				Ks				H				J				I	>	23		R				V				B			U		233
+SGR 0501+4516	39685		19.2	0.2	Ks				H				J				I				R				V				B			U		236
+SGR 0501+4516	39685				Ks				H				J		23.3	0.4	I				R				V				B			U		232
+SGR 0501+4516	39691		19.1	0.1	K				H				J				I				R				V				B			U		237
+SGR 0501+4516	39693				Ks				H				J		23.5	0.4	i				R				V				B			U		235
+SGR 0501+4516	39814				Ks				H				J		24.4	0.1	i'				R				V	>	26.9		g'	>	24.7	u'	3	252
+SGR 0501+4516	39841		19.7	0.1	K				H				J				I				R				V				B			U		252
+SGR 0526-66	36113				Ks				H				J				I				R	>	26.6		F547W	>	24.7		F380W	>	25	F300W	3	204
+SGR 0526-66	36277				Ks				H				J	>	26.7		F814W				R				V				B			U	3	204
+1E 1048.1-5937	36970				Ks				H				J	>	23.5		I	>	24.5		R	>	25.5		V	>	25.5		B			U		207
+1E 1048.1-5937	36974				Ks				H				J	>	24.4		i'	>	24.8		r'				V				B			U	3	208
+1E 1048.1-5937	37306	>	20.7		Ks	>	21.5		H	>	23		J				I				R				V				B			U	3	207
+1E 1048.1-5937	37354		19.4	0.3	Ks		20.8	0.3	H		21.7	0.3	J				I				R				V				B			U		208
+1E 1048.1-5937	37735		21.3	0.3	Ks	>	21.3		H		23.4	0.4	J				I				R				V				B			U		218
+1E 1048.1-5937	37778				Ks				H				J	>	24.2		z'	>	26		VR				V				B			U	2	218
+1E 1048.1-5937	37778				Ks				H				J		26.2	0.4	I				R				V				B			U		218
+1E 1048.1-5937	37779		21.5	0.4	Ks	>	20.8		H				J				I				R				V				B			U	2	218
+1E 1048.1-5937	38453	>	20.3		Ks				H				J				I				R				V				B			U	3	238
+1E 1048.1-5937	38471	>	20.6		Ks				H				J				I				R				V				B			U	3	238
+1E 1048.1-5937	38499		21	0.3	Ks				H				J				I				R				V				B			U		238
+1E 1048.1-5937	38509	>	21.4		Ks				H				J				I				R				V				B			U	3	238
+1E 1048.1-5937	38774				Ks		22.7	0.14	F160W	>	25		F110W				I				R				V				B			U	3	238
+1E 1048.1-5937	38827				Ks	>	23.1		F160W	>	24.8		F110W				I				R				V				B			U	3	238
+1E 1048.1-5937	38928				Ks	>	23.3		F160W				J				I				R				V				B			U	3	238
+1E 1048.1-5937	38983				Ks	>	22.9		F160W				J				I				R				V				B			U	3	238
+1E 1048.1-5937	39176		19.9	0.1	Ks				H				J				I				R				V				B			U		241
+1E 1048.1-5937	39209				Ks				H				J		24.9	0.2	I				R				V				B			U		241
+1E 1048.1-5937	39210	>	20.1		Ks				H				J				I				R				V				B			U	3	241
+1E 1048.1-5937	39242				Ks				H				J		25.3	0.2	i'				R				V	>	27.6		g'	>	25.7	u'	3	243
+1E 1048.1-5937	39257				Ks				H				J	>	24.1		i'	>	24.8		r'				V				B			U	3	241
+1E 1048.1-5937	39278				Ks				H				J	>	24.5		i'	>	25.6		r'				V				B			U	3	241
+1E 1547.0-5408	38881	>	17.5		Ks				H				J				I				R				V				B			U		230
+1E 1547.0-5408	39275	>	21.7		Ks				H				J				I				R				V				B			U	5	245
+1E 1547.0-5408	39724				Ks				H				J				I				R	>	20.4		V	>	20.7		B	>	20.3	U	3	234
+1E 1547.0-5408	39831	>	20.1		Ks				H				J				I				R				V				B			U	3	247
+1E 1547.0-5408	39837		18.5	0.3	Ks				H				J				I				R				V				B			U		244
+PSR J1622-4950	39257	>	20.7		Ks				H				J				I				R				V				B			U		255
+SGR 1627-41	36967	>	20		Ks	>	19.5		H	>	21.5		J				I				R				V				B			U		215
+SGR 1627-41	39603	>	19.28		Ks				H				J				I				R				V				B			U	X	242
+SGR 1627-41	39606	>	19.32		Ks				H				J				I				R				V				B			U	X	242
+SGR 1627-41	39663	>	19.12		Ks				H				J				I				R				V				B			U	X	242
+CXOU J164710.2-455216	37791	>	18.5		Ks				H				J				I				R				V				B			U		227
+CXOU J164710.2-455216	38854	>	21		Ks				H				J				I				R				V				B			U	3	228
+CXOU J164710.2-455216	38989	>	20.3		Ks				H				J				I				R				V				B			U	3	228
+1RXS J170849.0-400910	36418				Ks				H				J				I	>	26.5		R				V				B			U	3	210
+1RXS J170849.0-400910	37037				Ks	>	18.6		H	>	20.9		J				I				R				V				B			U	X	210
+1RXS J170849.0-400910	37306	>	17.3		Ks				H				J				I				R				V				B			U	X	210
+1RXS J170849.0-400910	37449	>	17.1		Ks	>	18.6		H	>	20.6		J				I				R				V				B			U	X	224
+1RXS J170849.0-400910	37485	>	19.02		K'	>	20.29		H				J				I				R				V				B			U	X	225
+1RXS J170849.0-400910	37761	>	18.85		Ks				H				J				I				R				V				B			U	X	240
+1RXS J170849.0-400910	37778	>	17.45		Ks	>	18.75		H	>	20.83		J				I				R				V				B			U	X	225
+1RXS J170849.0-400910	37779				Ks				H				J	>	25.1		I				R				V				B			U	2	225
+1RXS J170849.0-400910	37791				Ks	>	20.01		H				J				I				R				V				B			U	X	240
+1RXS J170849.0-400910	37792	>	18.86		Ks	>	20.19		H	>	21.89		J				I				R				V				B			U	X	225
+SGR 1806-20	37401		21.9	0.8	K'				H				J				I				R				V				B			U		221
+SGR 1806-20	37870				Ks				H				J				I	>	21.5		Rc				V				B			U	2	209
+SGR 1806-20	38063		20.01	0.14	Ks	>	19.5		H	>	21.2		J				I				R				V				B			U	3	220
+SGR 1806-20	38064		20.09	0.15	Ks				H				J				I				R				V				B			U		220
+SGR 1806-20	38151		20.26	0.26	Ks				H				J				I				R				V				B			U		220
+SGR 1806-20	38157		19.94	0.13	Ks				H				J				I				R				V				B			U		220
+SGR 1806-20	38207		21	0.36	K'				H				J				I				R				V				B			U		221
+SGR 1806-20	38210		19.48	0.12	Ks				H				J				I				R				V				B			U		220
+SGR 1806-20	38233		20.5	0.2	K'				H				J				I				R				V				B			U		221
+SGR 1806-20	38237		19.7	0.08	Ks				H				J				I				R				V				B			U		220
+SGR 1806-20	38265		19.32	0.16	Ks				H				J				I				R				V				B			U		220
+SGR 1806-20	38606		20.2	0.2	Ks				H				J				I				R				V				B			U		223
+XTE J1810-197	37864	>	17.5		K				H	>	18.9		J	>	21.3		I				R	>	22.5		V				B			U		211
+XTE J1810-197	37867				Ks				H				J				I	>	21.5		Rc				V				B			U	2	209
+XTE J1810-197	37882		20.81	0.08	Ks		21.67	0.12	H		22.92	0.22	J				I				R				V				B			U		240
+XTE J1810-197	37902		20.82	0.09	Ks		21.81	0.16	H				J				I				R				V				B			U		240
+XTE J1810-197	37906				Ks				H				J	>	24.3		I				R				V				B			U	3	213
+XTE J1810-197	38060		21.18	0.05	Ks		22.55	0.07	H		23.89	0.23	J				I				R				V				B			U		240
+XTE J1810-197	38148	>	20		Ks		21.48	0.12	H	>	21.9		J				I				R				V				B			U	3	240
+XTE J1810-197	38196		21.21	0.1	Ks		21.73	0.11	H				J				I				R				V				B			U		240
+XTE J1810-197	38239				Ks		22.29	0.18	H		23.45	0.12	J				I				R				V				B			U		240
+XTE J1810-197	38241		20.82	0.16	Ks				H				J				I				R				V				B			U		229
+XTE J1810-197	38243		21.04	0.09	Ks				H				J				I				R				V				B			U		240
+XTE J1810-197	38974		21.89	0.15	Ks				H				J				I				R				V				B			U		229
+Swift J1822.3-1606	38840	>	17.3		K	>	18.3		H	>	19.3		J				I				R				V				B			U	5	257
+Swift J1822.3-1606	40745				Ks				H				J	>	22.2		z				R				V				B			U	3	257
+SGR 1833-0832	40256				Ks				H				J				I				R	>	21.4		V	>	21.3		B	>	22.3	U	3	250
+SGR 1833-0832	40257				Ks				H				J	>	24.9		z'				R				V				B			U	3	249
+SGR 1833-0832	40262	>	22.4		Ks				H				J				I				R				V				B			U	3	249
+Swift J1834.9-0846	40762				Ks				H				J	>	21.6		I				R				V				B			U		254
+Swift J1834.9-0846	40778	>	19.5		Ks				H				J				I				R				V				B			U	5	256
+1E 1841-045	37485		20.47	0.28	K'	>	21.54		H				J				I				R				V				B			U	3	240
+1E 1841-045	37777		19.6	0.2	Ks		20.8	0.4	H	>	22.1		J				I				R				V				B			U	2	217
+SGR 1900+14	37000				Ks				H				J	>	21		I				R				V				B			U		205
+SGR 1900+14	38807		19.21	0.08	K				H				J				I				R				V				B			U		240
+SGR 1900+14	38918		19.68	0.08	K				H				J				I				R				V				B			U		240
+1E 2259+586	35437				Ks				H				J	>	24.3		I	>	25.7		R				V				B			U	2	202
+1E 2259+586	36335		21.7	0.2	Ks				H	>	23.8		J				I				R				V				B			U	2	203
+1E 2259+586	36772				Ks				H				J	>	25.6		I	>	26.4		R				V				B			U	2	203
+1E 2259+586	37427				Ks				H				J	>	20		I	>	24.8		R				V				B			U		206
+1E 2259+586	37428		20.41	0.07	Ks				H				J				I				R				V				B			U		214
+1E 2259+586	37435		20.96	0.14	Ks				H				J				I				R				V				B			U		214
+1E 2259+586	37486		21.31	0.24	K'				H				J				I				R				V				B			U		214
+1E 2259+586	37844		21.66	0.11	Ks				H				J				I				R				V				B			U		214
+1E 2259+586	37930		21.54	0.05	Ks				H				J				I				R				V				B			U		214

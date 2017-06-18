@@ -1,0 +1,75 @@
+---
+title: "Getting cosmic rays data from voyager database"
+author: "kalai"
+date: "July 11, 2015"
+output: html_document
+---
+
+### Voyager data access (Daily averages of Proton and Helium Flux and Counting Rates)
+
+```{r,echo=FALSE}
+rm(list=ls())###### fresh start
+##voyager_home_url<-"http://voyager.gsfc.nasa.gov/archive/voyager-1/index.html"
+time<-as.numeric(readline(prompt="Choose time frequency:\n\n1 for daily average\n2 for 6 hour average\n3 for 15-minute average\n\n"))
+mission<-readline(prompt="Choose which mission:\n\n1 for Voyager#1\n2 for Voyager#2\n\n")
+time_list<-c("P1D","PT6H","PT15M")
+
+main_page_url<-paste("http://voyager.gsfc.nasa.gov/archive/voyager-",mission,"/",time_list[time],"/",sep="")
+
+
+data_format<-function(x){
+  g<-gsub("\\s+","\t",x)# replaces sss or ssss with \t
+  g<-unlist(strsplit(g,'\t'))# splits at \t    and converts to numbers. note:'date' lost
+}
+
+data_access<-function(period_link){
+link<-paste(main_page_url,period_link,sep="")
+con<-url(link,method="wininet")
+
+ read_file<-TRUE
+ # i<-num_line
+ i<-0
+ #allLine <- readLines(con, n=num_line+4,warn = FALSE)#### eliminating helium, alpha and proton 
+ allLine <- readLines(con, warn = FALSE)
+ num_line<-as.numeric(allLine[4])
+ print("data from net read for period")
+ print(num_line)
+while (i<=num_line) {
+    
+  i<-i+1
+  #print(allLine[i+num_line+4])
+    f<-data_format(allLine[i+num_line+4])
+    m<-matrix(f[2:length(f)],ncol=2,byrow=TRUE)
+    df<-data.frame(cbind(rep(as.Date(f[1]),164),m))
+    ####note: time dropped. only date taken (origin as 1970-01-01)
+    write.table(df,"file_voyager_formatted.txt",append=T,sep="\t",quote = FALSE,
+                col.names = FALSE,row.names = FALSE)
+    #print("line written")
+  #}
+}
+ 
+ print("written file for data for period")
+ print(period_link)
+ close(con)
+}
+
+fileName<-"file_voyager_formatted.txt"
+if(file.exists(fileName)){
+  file.remove(fileName)
+  # print("file deleted")
+  }
+
+choose_data_duration<-function(){
+  "http://voyager.gsfc.nasa.gov/archive/voyager-1/index.html"
+  }
+
+
+library(stringr)
+url <- main_page_url
+html <- paste(readLines(url), collapse="\n")
+sublinks <- str_match_all(html, "<a href=\"(.*?)\"")
+l<-mapply(data_access,sublinks[[1]][,2])
+print("mapply:  voyager data file re-written")
+
+
+```

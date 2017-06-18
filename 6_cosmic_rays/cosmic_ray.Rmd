@@ -1,0 +1,64 @@
+---
+title: "Data Analysis of AMS (The Alpha Magnetic Spectrometer) data for Cosmic Rays using R"
+author: "kalai"
+date: "July 10, 2015"
+output: html_document
+---
+
+This file computes various plots for the study of cosmic rays.
+  
+### Positron ratio
+  
+```{r,echo=FALSE,results='hide',message=FALSE}
+d<-read.csv("cosmic_positron_ratio_data_AMS02.dat",header=TRUE,sep=" ")
+head(d)
+library(ggplot2)
+g<-ggplot(d,aes(x=Energy,y=positron_ratio))+geom_point()+scale_x_log10()
+g+geom_errorbar(aes(ymin = (positron_ratio-ratio_errtot_lo),ymax = (positron_ratio+ratio_errtot_up),colour="red"))+
+  geom_errorbarh(aes(xmin = Elow,xmax = Eup,colour="red"))+
+  geom_smooth(method="lm",formula='y~poly(x,4)',linetype=1,colour="black")
+
+```
+  
+  1. Note:
+  
+    + The positron fraction dips down till about 8GeV after which it starts increasing (unexplained). 
+    
+    + Again at about 275 +/ 32 GeV it starts to go down again.
+    
+    
+  2. References:
+  
+    + http://www.ams02.org/
+    
+    + http://lpsc.in2p3.fr/crdb/
+  
+  
+### __Flux__ of electrons and positrons:
+
+```{r,echo=FALSE,results='hide',message=FALSE}
+cr<-read.csv("cosmic_ray_data_electron_positron_flux_AMS0102.txt",sep='\t',stringsAsFactors = FALSE)
+#names(cr)
+str(cr)
+#head(cr)
+library(ggplot2)
+
+#plotting flux
+ggplot(cr,aes(Energy,Flux,colour=Item))+geom_point()+scale_x_log10()+scale_y_log10()#+geom_errorbar(aes(ymin = Flux_min,ymax = Flux_max,colour="black"))
+
+```
+
+  
+### __(E^3^ * Flux)__ of electrons and positrons:
+
+```{r,echo=FALSE,results='hide',message=FALSE}
+cr$E3Flux<-(cr$Energy^3)*cr$Flux
+ggplot(cr,aes(Energy,E3Flux,colour=Item))+geom_point()+xlim(0.5,750)+ylim(1,250)+scale_x_log10()+scale_y_log10()
+```
+
+
+### __(E^3^ * Flux)__ of electrons and positrons (facet_grids)
+
+```{r,echo=FALSE,results='hide',message=FALSE}
+ggplot(cr,aes(Energy,E3Flux,colour=Item))+geom_point()+xlim(0.5,700)+ylim(0.1,300)+facet_grid(Item~.)+scale_x_log10()+scale_y_log10()
+```
